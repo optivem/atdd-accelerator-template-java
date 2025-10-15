@@ -80,6 +80,19 @@ jobs:
         version: latest
         image-urls: ${{ needs.find-latest-images.outputs.image-digest-urls }}
 
+    - name: Setup Java
+      uses: actions/setup-java@v4
+      with:
+        java-version: 21
+        distribution: temurin
+
+    - name: Setup Gradle
+      uses: gradle/actions/setup-gradle@v4.0.0
+    
+    - name: Make Gradle Wrapper executable
+      run: chmod +x ./gradlew
+      working-directory: system-test
+
     - name: Run Acceptance Tests
       run: echo "Run Acceptance Tests"
 
@@ -87,7 +100,8 @@ jobs:
       run: echo "Run External System Contract Tests"
 
     - name: Run E2E Tests
-      run: echo "Run E2E Tests"
+      run: ./gradlew test --tests com.optivem.atddaccelerator.template.systemtest.e2etests.*
+      working-directory: system-test
   
   prerelease:
     needs: [find-latest-images, should-run, system-test]
