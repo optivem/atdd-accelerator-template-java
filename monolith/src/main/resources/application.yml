@@ -4,4 +4,4 @@ spring:
 
 todos:
   api:
-    base-url: ${TODOS_API_BASE_URL:https://jsonplaceholder.typicode.com/todos/}
+    host: ${TODOS_API_HOST:https://jsonplaceholder.typicode.com}

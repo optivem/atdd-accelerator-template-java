@@ -12,14 +12,14 @@ import org.springframework.web.client.RestTemplate;
 @RequestMapping("/api")
 public class TodoApiController {
 
-    @Value("${todos.api.base-url}")
-    private String todosApiBaseUrl;
+    @Value("${todos.api.host}")
+    private String todosApiHost;
 
     private final RestTemplate restTemplate = new RestTemplate();
 
     @GetMapping("/todos/{id}")
     public Todo getTodo(@PathVariable int id) {
-        String url = todosApiBaseUrl + id;
+        String url = todosApiHost + "/todos/" + id;
         return restTemplate.getForObject(url, Todo.class);
     }
 }
