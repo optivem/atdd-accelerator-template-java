@@ -24,6 +24,19 @@ java -version
 ./gradlew build
 ```
 
+Run the application
+
+```shell
+.\gradlew bootRun
+```
+
+Rebuild and restart the application
+
+```shell
+.\gradlew build && .\gradlew bootRun
+```
+
+
 TODO: VJ: Comment
 
 TODO: VJ: Comment 2025-10-08
