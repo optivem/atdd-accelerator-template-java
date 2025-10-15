@@ -71,7 +71,7 @@
                 resultDiv.innerHTML = 'Loading...';
                 resultDiv.classList.remove('hidden');
                 
-                const response = await fetch(`/todos/${todoId}`);
+                const response = await fetch(`/api/todos/${todoId}`);
                 
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);

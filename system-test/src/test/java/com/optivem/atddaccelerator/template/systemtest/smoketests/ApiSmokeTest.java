@@ -18,7 +18,7 @@ class ApiSmokeTest {
 
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
-                .uri(new URI("http://localhost:8080/echo"))
+                .uri(new URI("http://localhost:8080/api/echo"))
                 .GET()
                 .build();
 

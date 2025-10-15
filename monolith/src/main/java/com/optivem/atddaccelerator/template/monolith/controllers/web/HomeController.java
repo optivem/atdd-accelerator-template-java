@@ -1,4 +1,4 @@
-package com.optivem.atddaccelerator.template.monolith.controllers;
+package com.optivem.atddaccelerator.template.monolith.controllers.web;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,12 +11,6 @@ public class HomeController {
     @ResponseBody
     public String home() {
         return "Hello World!";
-    }
-
-    @GetMapping("/echo")
-    @ResponseBody
-    public String echo() {
-        return "Echo";
     }
 
     @GetMapping("/todos")

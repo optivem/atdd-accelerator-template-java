@@ -20,7 +20,7 @@ class ApiE2eTest {
         // Arrange
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
-                .uri(new URI("http://localhost:8080/todos/4"))
+                .uri(new URI("http://localhost:8080/api/todos/4"))
                 .GET()
                 .build();
 
