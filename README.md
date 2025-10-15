@@ -1,4 +1,4 @@
-# ATDD Accelerator Template (.NET)
+# ATDD Accelerator Template (Java)
 
 [![commit-stage-monolith](https://github.com/optivem/atdd-accelerator-template-java/actions/workflows/commit-stage-monolith.yml/badge.svg)](https://github.com/optivem/atdd-accelerator-template-java/actions/workflows/commit-stage-monolith.yml)
 [![acceptance-stage](https://github.com/optivem/atdd-accelerator-template-java/actions/workflows/acceptance-stage.yml/badge.svg)](https://github.com/optivem/atdd-accelerator-template-java/actions/workflows/acceptance-stage.yml)
