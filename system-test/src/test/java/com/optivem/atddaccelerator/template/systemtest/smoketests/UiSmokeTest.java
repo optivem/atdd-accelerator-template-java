@@ -5,7 +5,7 @@ import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class SmokeTest {
+public class UiSmokeTest {
     @Test
     void shouldOpenLocalhostAndCheckStatus200() {
         try (Playwright playwright = Playwright.create()) {
