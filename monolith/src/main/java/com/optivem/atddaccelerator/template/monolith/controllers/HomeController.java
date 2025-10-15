@@ -12,4 +12,10 @@ public class HomeController {
     public String home() {
         return "Hello World!";
     }
+
+    @GetMapping("/echo")
+    @ResponseBody
+    public String echo() {
+        return "Echo";
+    }
 }
