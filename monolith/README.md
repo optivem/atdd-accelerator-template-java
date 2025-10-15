@@ -46,3 +46,5 @@ Rebuild and restart the application
 .\gradlew build && .\gradlew bootRun
 ```
 
+App should now be running on:
+http://localhost:8080/
