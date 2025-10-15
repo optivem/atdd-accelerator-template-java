@@ -18,4 +18,9 @@ public class HomeController {
     public String echo() {
         return "Echo";
     }
+
+    @GetMapping("/todos")
+    public String todos() {
+        return "todos.html";
+    }
 }
