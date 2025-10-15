@@ -13,6 +13,10 @@ class ApiE2eTest {
 
     @Test
     void getTodos_shouldReturnTodoWithExpectedFormat() throws Exception {
+        // DISCLAIMER: This is an example of a badly written test
+        // which unfortunately simulates real-life software test projects.
+        // This is the starting point for our ATDD Accelerator exercises.
+
         // Arrange
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
