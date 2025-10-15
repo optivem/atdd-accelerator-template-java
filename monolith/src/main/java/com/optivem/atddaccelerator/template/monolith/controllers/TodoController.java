@@ -5,15 +5,17 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
 
 @RestController
 public class TodoController {
 
+    private final RestTemplate restTemplate = new RestTemplate();
+
     @GetMapping("/todos/{id}")
     @ResponseBody
     public Todo getTodo(@PathVariable int id) {
-        // For simplicity, returning a mock todo with the requested ID
-        // In a real application, this would fetch from a database
-        return new Todo(1, id, "delectus aut autem", false);
+        String url = "https://jsonplaceholder.typicode.com/todos/" + id;
+        return restTemplate.getForObject(url, Todo.class);
     }
 }
