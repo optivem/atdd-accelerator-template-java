@@ -2,27 +2,37 @@
 
 ## Instructions
 
-1. Open up the 'system-test' folder in IntelliJ (make sure it is at the root of your project)
+Open up the 'system-test' folder
 
-2. Start Docker Containers
+```shell
+cd system-test
+```
+
+Check that you have Powershell 7
+
+```shell
+$PSVersionTable.PSVersion
+```
+
+Start Docker Containers
 
 ```shell
 docker compose up -d
 ```
 
-3. Run All Tests
+Run All Tests
 
 ```shell
 ./gradlew test
 ```
 
-4. Run Smoke Tests Only
+Run Smoke Tests Only
 
 ```shell
 ./gradlew test --tests com.optivem.atddaccelerator.template.systemtest.smoketests.*
 ```
 
-5. Stop Docker Containers
+Stop Docker Containers
 
 ```shell
 docker compose down
