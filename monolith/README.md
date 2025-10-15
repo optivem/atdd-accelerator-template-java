@@ -31,7 +31,7 @@ java -version
 Build the application using Gradle
 
 ```shell
-./gradlew build
+.\gradlew build
 ```
 
 Run the application
