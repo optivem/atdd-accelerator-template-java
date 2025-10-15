@@ -22,9 +22,4 @@ public class TodoApiController {
         String url = todosApiBaseUrl + id;
         return restTemplate.getForObject(url, Todo.class);
     }
-
-    @GetMapping("/echo")
-    public String echo() {
-        return "Echo";
-    }
 }
