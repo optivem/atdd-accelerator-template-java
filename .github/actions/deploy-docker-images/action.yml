@@ -66,14 +66,6 @@ runs:
       run: chmod +x ./gradlew
       shell: bash
       working-directory: system-test
-
-    - name: Setup Environment for Smoke Tests
-      uses: ./.github/actions/setup-java-environment
-      with:
-        working-directory: system-test
-        java-version: '17'
-        cache-dependency-path: system-test/build.gradle
-        run-build: false
         
     - name: Run Smoke Tests
       run: ./gradlew test --tests com.optivem.atddaccelerator.template.systemtest.smoketests.*
