@@ -8,7 +8,9 @@
 
 ## License
 
-MIT License
+This project is released under [CC0 1.0 Universal](https://creativecommons.org/publicdomain/cc0/1.0/) - Public Domain Dedication.
+
+To the extent possible under law, the contributors have dedicated all copyright and related rights to this software to the public domain worldwide. This software is distributed without any warranty.
 
 ## Contributors
 
