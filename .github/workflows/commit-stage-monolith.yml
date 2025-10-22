@@ -24,7 +24,6 @@ jobs:
     outputs:
       image-latest-url: ${{ steps.publish.outputs.image-latest-url }}
       image-digest-url: ${{ steps.publish.outputs.image-digest-url }}
-      image-created-timestamp: ${{ steps.publish.outputs.image-created-timestamp }}
 
     permissions:
       contents: read
