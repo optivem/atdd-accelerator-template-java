@@ -79,13 +79,13 @@
                 
                 const todo = await response.json();
                 
-                // Display the todo data in a simple format
+                // Display the todo data in a simple format with user-friendly names
                 resultDiv.innerHTML = `
                     <h3>Todo Details:</h3>
-                    <p><strong>userId:</strong> ${todo.userId}</p>
-                    <p><strong>id:</strong> ${todo.id}</p>
-                    <p><strong>title:</strong> ${todo.title}</p>
-                    <p><strong>completed:</strong> ${todo.completed}</p>
+                    <p><strong>User ID:</strong> ${todo.userId}</p>
+                    <p><strong>ID:</strong> ${todo.id}</p>
+                    <p><strong>Title:</strong> ${todo.title}</p>
+                    <p><strong>Completed:</strong> ${todo.completed}</p>
                 `;
                 
             } catch (error) {
