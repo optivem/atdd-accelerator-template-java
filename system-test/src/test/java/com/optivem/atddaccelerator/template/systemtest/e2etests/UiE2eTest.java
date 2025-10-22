@@ -52,8 +52,8 @@ class UiE2eTest {
                       "Result should contain 'User ID: 1'. Actual text: " + resultText);
             assertTrue(resultText.contains("Title"), 
                       "Result should contain 'Title' field. Actual text: " + resultText);
-            assertTrue(resultText.contains("Completed"), 
-                      "Result should contain 'Completed' field. Actual text: " + resultText);
+            assertTrue(resultText.contains("Completed") && (resultText.contains("Yes") || resultText.contains("No")), 
+                      "Result should contain 'Completed' field with value 'Yes' or 'No'. Actual text: " + resultText);
             
             browser.close();
         }

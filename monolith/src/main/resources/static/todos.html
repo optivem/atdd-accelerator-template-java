@@ -80,12 +80,13 @@
                 const todo = await response.json();
                 
                 // Display the todo data in a simple format with user-friendly names
+                const completedText = todo.completed ? 'Yes' : 'No';
                 resultDiv.innerHTML = `
                     <h3>Todo Details:</h3>
                     <p><strong>User ID:</strong> ${todo.userId}</p>
                     <p><strong>ID:</strong> ${todo.id}</p>
                     <p><strong>Title:</strong> ${todo.title}</p>
-                    <p><strong>Completed:</strong> ${todo.completed}</p>
+                    <p><strong>Completed:</strong> ${completedText}</p>
                 `;
                 
             } catch (error) {
