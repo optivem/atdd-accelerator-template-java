@@ -10,8 +10,7 @@
 
 [![Unlicense](https://img.shields.io/badge/license-Unlicense-lightgrey.svg)](http://unlicense.org/)
 
-This project is released under [The Unlicense](http://unlicense.org) — a public domain dedication.
-See the full text in the `LICENSE` file.
+This project is released under The Unlicense — a public domain dedication.
 
 ## Contributors
 
