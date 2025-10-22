@@ -45,15 +45,15 @@ class UiE2eTest {
             // Debug: Print the actual result text
             System.out.println("Actual result text: " + resultText);
             
-            // Verify the todo data is displayed (more flexible checking)
-            assertTrue(resultText.contains("userId") && (resultText.contains("1") || resultText.contains(": 1")), 
-                      "Result should contain userId: 1. Actual text: " + resultText);
-            assertTrue(resultText.contains("id") && (resultText.contains("4") || resultText.contains(": 4")), 
-                      "Result should contain id: 4. Actual text: " + resultText);
-            assertTrue(resultText.contains("title"), 
-                      "Result should contain title field. Actual text: " + resultText);
-            assertTrue(resultText.contains("completed"), 
-                      "Result should contain completed field. Actual text: " + resultText);
+            // Verify the todo data is displayed with user-friendly names
+            assertTrue(resultText.contains("ID") && (resultText.contains("4") || resultText.contains(": 4")), 
+                      "Result should contain 'ID: 4'. Actual text: " + resultText);
+            assertTrue(resultText.contains("User ID") && (resultText.contains("1") || resultText.contains(": 1")), 
+                      "Result should contain 'User ID: 1'. Actual text: " + resultText);
+            assertTrue(resultText.contains("Title"), 
+                      "Result should contain 'Title' field. Actual text: " + resultText);
+            assertTrue(resultText.contains("Completed"), 
+                      "Result should contain 'Completed' field. Actual text: " + resultText);
             
             browser.close();
         }
