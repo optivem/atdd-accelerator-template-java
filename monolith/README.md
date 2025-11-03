@@ -28,7 +28,7 @@ Check that JAVA_HOME is set correctly & points to your JDK 21installation
 echo $env:JAVA_HOME
 ```
 
-Ensure you have Gradle 9.1 installed
+Ensure you have Gradle 8.14 installed
 
 ```shell
 ./gradlew --version
