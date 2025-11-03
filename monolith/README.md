@@ -22,7 +22,7 @@ Ensure you have JDK 21 installed
 java -version
 ```
 
-Check that JAVA_HOME is set correctly & points to your JDK 21installation
+Check that JAVA_HOME is set correctly & points to your JDK 21 installation
 
 ```shell
 echo $env:JAVA_HOME
