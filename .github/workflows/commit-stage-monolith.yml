@@ -66,6 +66,12 @@ jobs:
       env:
         REGISTRY_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
 
+    - name: Public Docker Image Output Info
+      run: |
+        echo "Image Published at ${{ steps.publish.outputs.image-latest-url }}"
+        echo "Image Digest at ${{ steps.publish.outputs.image-digest-url }}"
+      shell: bash
+
   summary:
     needs: build
     runs-on: ubuntu-latest
